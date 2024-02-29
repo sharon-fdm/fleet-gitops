@@ -3,16 +3,6 @@
 # For Fleet Premium, the default.yml file updates queries and policies that run on all hosts ("All teams"). Controls and agent options are updated for hosts on "No team."
 
 controls: # Controls added to "No team"
-  macos_settings:
-    custom_settings:
-      - path: ./lib/macos-password.mobileconfig
-      # - path: ../lib/macos-os-updates.ddm.json (DDM coming soon)
-  windows_enabled_and_configured: true
-  windows_settings:
-    custom_settings:
-      - path: ./lib/windows-screenlock.xml
-  scripts:
-    - path: ./lib/collect-fleetd-logs.sh
 queries:
   - path: ./lib/collect-fleetd-update-channels.queries.yml
 policies:
