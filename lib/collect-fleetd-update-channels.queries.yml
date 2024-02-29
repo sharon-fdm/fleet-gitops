@@ -5,3 +5,17 @@
   observer_can_run: true
   automations_enabled: false
   platform: darwin,linux,windows
+- name: Dummy Query
+  description: "Does dummy things"
+  query: SELECT non_existing_field FROM NON_EXISTING_TABLE;
+  interval: 300 # 5 minutes
+  observer_can_run: true
+  automations_enabled: false
+  platform: darwin,linux,windows
+- name: Dummy Query 2
+  description: "Does dummy things"
+  query: SELECT * FROM time;
+  interval: 300 # 5 minutes
+  observer_can_run: true
+  automations_enabled: false
+  platform: darwin,linux,windows
