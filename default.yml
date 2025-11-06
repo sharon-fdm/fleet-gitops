@@ -17,7 +17,7 @@ org_settings:
     host_expiry_enabled: true
     host_expiry_window: 30
   org_info:
-    org_name: My test org
+    org_name: "My test org"
   webhook_settings:
     activities_webhook:
       enable_activities_webhook: true
